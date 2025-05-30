@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup, NavigableString, Tag
 from django.core.management.base import BaseCommand
@@ -42,7 +43,7 @@ class Command(BaseCommand):
 
         for container in unique_containers:
             print(container)
-            print("____________________________________________________________")
+            print("____________________________________________________________")   
             title_text = None
             article_url = None
             if container.name == 'a' and container.has_attr('href'):
